@@ -1,4 +1,14 @@
 # AgriMitra-AI
+#Website Look & Feel
+<img width="1280" height="464" alt="WhatsApp Image 2026-09-17 at 14 13 28" src="https://github.com/user-attachments/assets/bafec184-ce1d-47df-9464-8fd4906bd53d" />
+<img width="1280" height="458" alt="photo 2" src="https://github.com/user-attachments/assets/01add7c6-bb4d-44cd-bbf4-a8128511b1b3" />
+<img width="1280" height="656" alt="photo 3" src="https://github.com/user-attachments/assets/51582e0d-5e7d-4f9f-a9ca-b18b3f68ce13" />
+<img width="1280" height="548" alt="photo 4" src="https://github.com/user-attachments/assets/135efd3a-dc43-4e7e-8aba-3d8ace817b87" />
+<img width="1280" height="576" alt="photo 5" src="https://github.com/user-attachments/assets/5bd4c569-c200-4940-a7a8-c58e7ab8fae5" />
+<img width="1280" height="620" alt="photo 6" src="https://github.com/user-attachments/assets/0787aee5-f67d-4387-b005-49c22d873829" />
+<img width="1280" height="734" alt="photo 7" src="https://github.com/user-attachments/assets/c13141d2-ae96-4d4e-abce-929b0ccf951f" />
+<img width="1280" height="738" alt="photo 8" src="https://github.com/user-attachments/assets/20b094c1-9fce-4607-be96-3b49aa4dfa09" />
+<img width="1280" height="682" alt="photo 9" src="https://github.com/user-attachments/assets/34597f1a-818d-404b-83ec-e94b89a41405" />
 # 🌾 AgriMitra AI
 
 AgriMitra AI is a smart agriculture platform designed to help farmers make better farming decisions using Artificial Intelligence, Machine Learning, localized weather data, soil image analysis, early farming alerts, irrigation guidance, and multilingual voice assistance.
