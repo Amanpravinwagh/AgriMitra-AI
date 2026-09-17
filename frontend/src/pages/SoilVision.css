@@ -1,0 +1,1153 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.soil-page {
+  min-height: 100vh;
+  background: #f5f8f5;
+  color: #183b28;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.soil-header {
+  height: 74px;
+  padding: 0 6%;
+
+  background: white;
+
+  border-bottom: 1px solid #e0e9e2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.soil-back-button {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #65766b;
+
+  font-size: 14px;
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+
+.soil-back-button:hover {
+  color: #27884b;
+}
+
+
+.soil-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.soil-brand-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+
+  background: #e8f6eb;
+
+  color: #27884b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.soil-brand h1 {
+  margin: 0;
+
+  font-size: 18px;
+}
+
+
+.soil-brand p {
+  margin: 3px 0 0;
+
+  color: #829087;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.soil-container {
+  width: min(1050px, 92%);
+
+  margin: auto;
+
+  padding: 45px 0 70px;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.soil-intro {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 28px;
+}
+
+
+.soil-eyebrow {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #29874b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.soil-intro h2 {
+  margin: 0 0 8px;
+
+  font-size: 34px;
+
+  letter-spacing: -0.8px;
+}
+
+
+.soil-intro p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #697970;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+.soil-feature-badge {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border-radius: 30px;
+
+  background: white;
+
+  border: 1px solid #dce7df;
+
+  color: #34734b;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   UPLOAD CARD
+===================================================== */
+
+.soil-upload-card {
+  background: white;
+
+  border: 1px solid #dfe8e1;
+
+  border-radius: 20px;
+
+  padding: 42px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(
+      28,
+      69,
+      43,
+      0.05
+    );
+}
+
+
+.upload-icon {
+  width: 78px;
+  height: 78px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 22px;
+
+  background: #e9f7ec;
+
+  color: #29894c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.soil-upload-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 22px;
+}
+
+
+.soil-upload-card > p {
+  max-width: 590px;
+
+  margin: 0 auto 24px;
+
+  color: #78857d;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.upload-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 11px;
+}
+
+
+.camera-button,
+.upload-button,
+.analyze-button {
+  height: 48px;
+
+  padding: 0 20px;
+
+  border-radius: 10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 13px;
+
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+
+.camera-button {
+  border: none;
+
+  background: #27894c;
+
+  color: white;
+}
+
+
+.camera-button:hover {
+  background: #1f753f;
+}
+
+
+.upload-button {
+  border: 1px solid #d7e3da;
+
+  background: white;
+
+  color: #345442;
+}
+
+
+.upload-button:hover {
+  border-color: #9ccbaa;
+}
+
+
+.photo-tips {
+  margin-top: 25px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  color: #77857c;
+
+  font-size: 11px;
+}
+
+
+.photo-tips div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+.photo-tips svg {
+  color: #318e51;
+}
+
+
+/* =====================================================
+   PREVIEW
+===================================================== */
+
+.preview-area {
+  max-width: 650px;
+
+  margin: auto;
+
+  text-align: left;
+}
+
+
+.preview-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+
+.preview-header span {
+  color: #7d8a82;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.preview-header h3 {
+  margin: 3px 0 0;
+
+  font-size: 18px;
+}
+
+
+.retake-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border: 1px solid #dbe4dd;
+
+  background: white;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  color: #54675b;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+
+.soil-image-wrapper {
+  height: 340px;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  background: #edf2ee;
+}
+
+
+.soil-preview {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.preview-file {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 10px 0 17px;
+
+  color: #77847c;
+
+  font-size: 11px;
+}
+
+
+.analyze-button {
+  width: 100%;
+
+  border: none;
+
+  background: #23884b;
+
+  color: white;
+}
+
+
+.analyze-button:hover {
+  background: #1d743f;
+}
+
+
+.analyze-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+
+.soil-spin {
+  animation: soilSpin 1s linear infinite;
+}
+
+
+@keyframes soilSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.soil-error {
+  margin-top: 18px;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  background: #fff4f2;
+
+  border: 1px solid #f0d2cc;
+
+  color: #9b493d;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   PROGRESS
+===================================================== */
+
+.analysis-progress {
+  margin-top: 25px;
+
+  background: white;
+
+  border: 1px solid #dfe8e1;
+
+  border-radius: 17px;
+
+  padding: 30px;
+
+  text-align: center;
+}
+
+
+.progress-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: auto;
+
+  border-radius: 16px;
+
+  background: #eaf7ed;
+
+  color: #28884b;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.analysis-progress h3 {
+  margin: 15px 0 6px;
+
+  font-size: 18px;
+}
+
+
+.analysis-progress p {
+  margin: 0;
+
+  color: #7b877f;
+
+  font-size: 12px;
+}
+
+
+.progress-bar {
+  height: 7px;
+
+  margin: 22px auto;
+
+  max-width: 550px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #e8eee9;
+}
+
+
+.progress-bar div {
+  width: 75%;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #329456;
+
+  animation: progressAnimation 1.5s infinite;
+}
+
+
+@keyframes progressAnimation {
+
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+
+}
+
+
+.analysis-steps {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 17px;
+
+  color: #738178;
+
+  font-size: 11px;
+}
+
+
+.analysis-steps span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+.analysis-steps svg {
+  color: #318c50;
+}
+
+
+/* =====================================================
+   RESULT
+===================================================== */
+
+.soil-result {
+  margin-top: 25px;
+}
+
+
+.result-success {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.success-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 13px;
+
+  background: #e7f7eb;
+
+  color: #29884c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.result-success span {
+  color: #29884c;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+
+.result-success h2 {
+  margin: 3px 0 0;
+
+  font-size: 25px;
+}
+
+
+/* =====================================================
+   MAIN RESULT
+===================================================== */
+
+.result-main {
+  display: flex;
+
+  gap: 22px;
+
+  align-items: center;
+
+  padding: 27px;
+
+  background: white;
+
+  border: 1px solid #dfe8e1;
+
+  border-radius: 18px;
+}
+
+
+.soil-result-icon {
+  width: 95px;
+  height: 95px;
+
+  flex-shrink: 0;
+
+  border-radius: 22px;
+
+  background: #eaf7ec;
+
+  color: #298a4d;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.soil-result-info {
+  flex: 1;
+}
+
+
+.result-label {
+  color: #839087;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.soil-result-info h3 {
+  margin: 5px 0 6px;
+
+  font-size: 28px;
+}
+
+
+.soil-result-info > p {
+  max-width: 650px;
+
+  margin: 0 0 18px;
+
+  color: #707e75;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+
+.confidence-row > div:first-child {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+
+  color: #738178;
+
+  font-size: 11px;
+}
+
+
+.confidence-row strong {
+  color: #27854a;
+}
+
+
+.confidence-bar {
+  height: 8px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #e6ede8;
+}
+
+
+.confidence-bar div {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #3b9c5c;
+}
+
+
+/* =====================================================
+   CHARACTERISTICS
+===================================================== */
+
+.characteristics {
+  margin-top: 20px;
+
+  padding: 23px;
+
+  background: white;
+
+  border: 1px solid #dfe8e1;
+
+  border-radius: 17px;
+}
+
+
+.characteristics h3 {
+  margin: 0 0 15px;
+
+  font-size: 17px;
+}
+
+
+.characteristic-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+
+.characteristic {
+  padding: 14px;
+
+  background: #f7faf7;
+
+  border: 1px solid #e5ece6;
+
+  border-radius: 11px;
+}
+
+
+.characteristic-icon {
+  color: #328c51;
+
+  margin-bottom: 10px;
+}
+
+
+.characteristic span {
+  display: block;
+
+  color: #829087;
+
+  font-size: 10px;
+
+  margin-bottom: 4px;
+}
+
+
+.characteristic strong {
+  display: block;
+
+  color: #2b4c37;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   IMPORTANT
+===================================================== */
+
+.important-box {
+  display: flex;
+
+  gap: 13px;
+
+  margin-top: 18px;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  background: #fffaf0;
+
+  border: 1px solid #eee0b8;
+}
+
+
+.important-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #fff0c9;
+
+  color: #a6761b;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.important-box h3 {
+  margin: 0 0 5px;
+
+  font-size: 15px;
+
+  color: #624d27;
+}
+
+
+.important-box p {
+  margin: 0;
+
+  color: #806e4b;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+.limitation-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 11px;
+}
+
+
+.limitation-list span {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: #fff4d9;
+
+  color: #735b2e;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   NEXT STEP
+===================================================== */
+
+.next-step {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 20px;
+
+  padding: 23px;
+
+  background: #edf8ef;
+
+  border: 1px solid #d4e9d8;
+
+  border-radius: 17px;
+}
+
+
+.next-step h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+}
+
+
+.next-step p {
+  margin: 0;
+
+  color: #68806f;
+
+  font-size: 12px;
+}
+
+
+.next-step button {
+  flex-shrink: 0;
+
+  height: 45px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 0 16px;
+
+  background: #26894c;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-weight: 700;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+.new-analysis-button {
+  width: 100%;
+
+  margin-top: 13px;
+
+  height: 45px;
+
+  background: white;
+
+  border: 1px solid #d9e4dc;
+
+  border-radius: 10px;
+
+  color: #4f6657;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  font-weight: 650;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .soil-intro {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .characteristic-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .result-main {
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .soil-header {
+    padding: 0 4%;
+
+    gap: 14px;
+  }
+
+
+  .soil-brand p {
+    display: none;
+  }
+
+
+  .soil-container {
+    width: 92%;
+
+    padding-top: 28px;
+  }
+
+
+  .soil-intro h2 {
+    font-size: 28px;
+  }
+
+
+  .soil-upload-card {
+    padding: 25px 18px;
+  }
+
+
+  .upload-actions {
+    flex-direction: column;
+  }
+
+
+  .camera-button,
+  .upload-button {
+    width: 100%;
+  }
+
+
+  .soil-image-wrapper {
+    height: 280px;
+  }
+
+
+  .result-main {
+    flex-direction: column;
+  }
+
+
+  .characteristic-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .next-step {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .next-step button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,1273 @@
+/* =========================================================
+   AGRIMITRA DASHBOARD
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f8f5;
+  color: #183020;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.topbar {
+  height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5ece6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: #e5f6e8;
+  color: #1f8b4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 800;
+  color: #12351f;
+}
+
+.brand span {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #78907e;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.desktop-nav button {
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 9px;
+  color: #607267;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.desktop-nav button:hover,
+.desktop-nav button.active {
+  background: #edf7ef;
+  color: #188044;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification-btn,
+.logout-btn {
+  border: 1px solid #e3eae5;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d6355;
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-btn:hover,
+.logout-btn:hover {
+  background: #f1f8f2;
+  color: #188044;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e55b4f;
+  border: 2px solid white;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background: transparent;
+  color: #243b2c;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #247b45;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.mobile-menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.dashboard-main {
+  width: min(1220px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 34px 0 60px;
+}
+
+.section {
+  margin-top: 38px;
+}
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #3d9b5c;
+  letter-spacing: 1.5px;
+}
+
+.section-title-row h2 {
+  margin: 5px 0 0;
+  font-size: 24px;
+  color: #173221;
+}
+
+.section-subtitle {
+  margin: 7px 0 0;
+  color: #718078;
+  font-size: 14px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  min-height: 285px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    #e9f8e9,
+    #f5fbf4
+  );
+  border: 1px solid #d9eadb;
+  padding: 42px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  background: #ffffff;
+  border-radius: 999px;
+  color: #328452;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.12;
+  margin: 18px 0 12px;
+  color: #14341f;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 620px;
+  color: #627267;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 23px;
+  color: #5c7062;
+  font-size: 14px;
+}
+
+.hero-location svg {
+  color: #29834a;
+}
+
+.hero-illustration {
+  width: 270px;
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #d5efd8;
+  color: #2d8c4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+  background: white;
+  padding: 11px 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(45, 90, 56, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #34764b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   WEATHER
+   ========================================================= */
+
+.refresh-btn,
+.edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #dbe7dd;
+  background: white;
+  color: #427052;
+  padding: 9px 13px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.refresh-btn:hover,
+.edit-btn:hover {
+  background: #eef8ef;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 18px;
+}
+
+.weather-main {
+  min-height: 310px;
+  background: linear-gradient(
+    145deg,
+    #dff3e2,
+    #f7fbf7
+  );
+  border: 1px solid #d7e9d9;
+  border-radius: 20px;
+  padding: 27px;
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #54705c;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.weather-temperature {
+  margin-top: 12px;
+  font-size: 58px;
+  font-weight: 800;
+  color: #173d23;
+  line-height: 1;
+}
+
+.weather-temperature span {
+  font-size: 26px;
+  vertical-align: top;
+  margin-left: 4px;
+}
+
+.weather-description {
+  margin-top: 9px;
+  color: #617369;
+  text-transform: capitalize;
+}
+
+.big-weather-icon {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  color: #4c9a68;
+}
+
+.weather-advice {
+  position: absolute;
+  bottom: 23px;
+  left: 27px;
+  right: 27px;
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 12px;
+  border-radius: 11px;
+  color: #52655a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.weather-advice svg {
+  color: #3e9a5b;
+  flex-shrink: 0;
+}
+
+.weather-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.weather-stat {
+  background: white;
+  border: 1px solid #e2e9e3;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.stat-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 11px;
+  background: #edf8ef;
+  color: #2f8d50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-stat span {
+  display: block;
+  font-size: 12px;
+  color: #7a897f;
+}
+
+.weather-stat strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+  color: #243d2c;
+}
+
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+
+.loading-box,
+.error-box {
+  min-height: 150px;
+  background: white;
+  border: 1px solid #e2e9e3;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.loading-box {
+  color: #4f6757;
+}
+
+.error-box {
+  padding: 22px;
+  justify-content: flex-start;
+  color: #a84d45;
+}
+
+.error-box div {
+  flex: 1;
+}
+
+.error-box strong {
+  color: #633c39;
+}
+
+.error-box p {
+  margin: 5px 0 0;
+  color: #7e6865;
+}
+
+.error-box button {
+  border: none;
+  background: #247b45;
+  color: white;
+  padding: 9px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   AI TOOLS
+   ========================================================= */
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.tool-card {
+  text-align: left;
+  border: 1px solid #e1e9e3;
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #1d3525;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(40, 85, 50, 0.1);
+  border-color: #c9dfcd;
+}
+
+.tool-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #eaf7ed;
+  color: #29874a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+.tool-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #5a9b6b;
+}
+
+.tool-card h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.tool-card p {
+  margin: 0;
+  color: #718077;
+  line-height: 1.6;
+  font-size: 13px;
+  min-height: 63px;
+}
+
+.tool-link {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #258247;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+/* =========================================================
+   IRRIGATION
+   ========================================================= */
+
+.irrigation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid #dce9df;
+  background: white;
+}
+
+.irrigation.rain {
+  background: #f0f7fb;
+  border-color: #d6e7ef;
+}
+
+.irrigation.hot {
+  background: #fff8ed;
+  border-color: #f0e2c9;
+}
+
+.irrigation.water {
+  background: #edf8f3;
+}
+
+.irrigation-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 15px;
+  background: #dff2e5;
+  color: #2b8c4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.irrigation-text {
+  flex: 1;
+}
+
+.irrigation-text > span {
+  font-size: 11px;
+  color: #789080;
+}
+
+.irrigation-text h3 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.irrigation-text p {
+  margin: 0;
+  color: #697a70;
+  font-size: 14px;
+}
+
+.check-soil-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background: #237a44;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.check-soil-btn:hover {
+  background: #196638;
+}
+
+.info-note {
+  margin-top: 11px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #f0f5f1;
+  color: #68786e;
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ASK AGRIMITRA
+   ========================================================= */
+
+.assistant {
+  background: white;
+  border: 1px solid #dce7de;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(30, 70, 40, 0.04);
+}
+
+.assistant-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #4c6253;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.language svg {
+  color: #318951;
+}
+
+.language select {
+  margin-left: 5px;
+  border: 1px solid #d7e3d9;
+  border-radius: 8px;
+  padding: 8px 11px;
+  background: #f8fbf8;
+  color: #294233;
+  outline: none;
+}
+
+.assistant-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #77867d;
+}
+
+.status-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #70a77d;
+}
+
+.status-circle.listening {
+  background: #dc6257;
+  box-shadow: 0 0 0 5px rgba(220, 98, 87, 0.12);
+}
+
+.voice-area {
+  text-align: center;
+  padding: 32px 10px 25px;
+}
+
+.microphone {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: none;
+  background: #2c874b;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(44, 135, 75, 0.22);
+  transition: 0.2s;
+}
+
+.microphone:hover {
+  transform: scale(1.04);
+}
+
+.microphone.active {
+  background: #d35b51;
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(211, 91, 81, 0.35);
+  }
+
+  70% {
+    box-shadow:
+      0 0 0 18px rgba(211, 91, 81, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(211, 91, 81, 0);
+  }
+}
+
+.voice-area h3 {
+  margin: 16px 0 6px;
+  font-size: 17px;
+  color: #263e2e;
+}
+
+.voice-area p {
+  margin: 0;
+  color: #78867e;
+  font-size: 13px;
+}
+
+.assistant-input {
+  display: flex;
+  border: 1px solid #dce6de;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fbfdfb;
+}
+
+.assistant-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #263b2d;
+}
+
+.assistant-input button {
+  width: 52px;
+  border: none;
+  background: #267d46;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assistant-answer {
+  margin-top: 15px;
+  padding: 17px;
+  background: #eff8f1;
+  border: 1px solid #d9eadc;
+  border-radius: 13px;
+}
+
+.answer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-top > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #277b43;
+}
+
+.answer-top button {
+  border: 1px solid #cfe0d2;
+  background: white;
+  color: #347049;
+  padding: 7px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.assistant-answer p {
+  margin: 12px 0 0;
+  color: #34483b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.assistant-error {
+  margin-top: 13px;
+  padding: 11px 13px;
+  border-radius: 9px;
+  background: #fff1ef;
+  color: #a34e48;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.quick-questions {
+  margin-top: 18px;
+}
+
+.quick-questions > span {
+  display: block;
+  margin-bottom: 9px;
+  color: #78867d;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.quick-questions > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-questions button {
+  border: 1px solid #dce7de;
+  background: #f8fbf8;
+  color: #4a6051;
+  padding: 9px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.quick-questions button:hover {
+  background: #edf7ef;
+  border-color: #c9dfcd;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.action-card {
+  background: white;
+  border: 1px solid #e0e8e2;
+  border-radius: 15px;
+  padding: 19px;
+  display: flex;
+  gap: 13px;
+}
+
+.action-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 11px;
+  background: #edf7ef;
+  color: #2b854a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.action-card h3 {
+  margin: 1px 0 5px;
+  font-size: 15px;
+}
+
+.action-card p {
+  margin: 0;
+  color: #75827a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FORECAST
+   ========================================================= */
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.forecast-card {
+  background: white;
+  border: 1px solid #e0e8e2;
+  border-radius: 15px;
+  padding: 17px;
+  text-align: center;
+}
+
+.forecast-card > span {
+  display: block;
+  color: #6f7f74;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.forecast-card > svg {
+  margin: 15px auto 8px;
+  color: #4e9a68;
+}
+
+.forecast-card strong {
+  display: block;
+  font-size: 21px;
+}
+
+.forecast-card small {
+  display: block;
+  color: #79857e;
+  margin-top: 4px;
+  min-height: 30px;
+}
+
+.forecast-rain {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #538b68;
+  font-size: 12px;
+}
+
+/* =========================================================
+   FARM PROFILE
+   ========================================================= */
+
+.farm-profile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.farm-profile > div {
+  background: white;
+  border: 1px solid #e0e8e2;
+  border-radius: 15px;
+  padding: 19px;
+}
+
+.farm-profile svg {
+  width: 22px;
+  color: #338951;
+  margin-bottom: 13px;
+}
+
+.farm-profile span {
+  display: block;
+  font-size: 11px;
+  color: #7b887f;
+}
+
+.farm-profile strong {
+  display: block;
+  margin-top: 5px;
+  color: #263e2d;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  border-top: 1px solid #e1e9e3;
+  background: white;
+  padding: 24px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7a877e;
+  font-size: 12px;
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footer svg {
+  color: #328951;
+}
+
+.footer strong {
+  color: #294332;
+  font-size: 14px;
+}
+
+.footer span {
+  margin-left: 5px;
+}
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.mobile-menu {
+  display: none;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .topbar {
+    padding: 0 20px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid #e1e9e3;
+    z-index: 90;
+    padding: 10px;
+  }
+
+  .mobile-menu button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding: 13px;
+    border-radius: 8px;
+    color: #42574a;
+    cursor: pointer;
+  }
+
+  .mobile-menu button:hover {
+    background: #edf7ef;
+  }
+
+  .hero {
+    padding: 32px;
+  }
+
+  .hero-illustration {
+    display: none;
+  }
+
+  .weather-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .farm-profile {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .forecast {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+
+  .topbar {
+    height: 68px;
+  }
+
+  .brand span {
+    display: none;
+  }
+
+  .brand h2 {
+    font-size: 18px;
+  }
+
+  .user-btn span {
+    display: none;
+  }
+
+  .dashboard-main {
+    width: calc(100% - 24px);
+    padding-top: 18px;
+  }
+
+  .hero {
+    border-radius: 18px;
+    padding: 25px;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 29px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .section-title-row {
+    align-items: center;
+  }
+
+  .section-title-row h2 {
+    font-size: 20px;
+  }
+
+  .weather-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weather-main {
+    min-height: 290px;
+  }
+
+  .weather-temperature {
+    font-size: 48px;
+  }
+
+  .big-weather-icon {
+    right: 20px;
+    top: 45px;
+  }
+
+  .irrigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .check-soil-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .assistant {
+    padding: 17px;
+  }
+
+  .assistant-header {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .language {
+    flex-wrap: wrap;
+  }
+
+  .forecast {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .farm-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .notification-btn,
+  .logout-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .avatar {
+    width: 34px;
+    height: 34px;
+  }
+
+  .weather-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-questions > div {
+    flex-direction: column;
+  }
+
+  .quick-questions button {
+    width: 100%;
+    text-align: left;
+  }
+}
